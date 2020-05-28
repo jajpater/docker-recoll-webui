@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  webapp:
+    build: ./
+    restart: always
+    volumes:
+      - /yourconfigandindexdir/:/root/.recoll/
+      - /yourindexabledocumentsdir:/docs
+    ports:
+      - "9090:8080"
+
