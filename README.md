@@ -10,7 +10,7 @@ recoll with webui in a docker container
 - the path of what will be indexed is `/docs`
 
 # links
-- stolen from: dsheyp/docker-recoll-webui
+- stolen from: https://github.com/dsheyp/docker-recoll-webui
 - source project: https://github.com/amsaravi/docker-recoll-webui
 - docker hub: https://hub.docker.com/repository/docker/amsaravi/recoll-web-ui
 # installation steps
