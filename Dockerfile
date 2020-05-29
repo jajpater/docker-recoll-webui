@@ -24,6 +24,8 @@ RUN apt autoremove
 RUN apt-get install -y --no-install-recommends poppler-utils
 RUN apt-get install -y --no-install-recommends unrtf antiword
 RUN apt-get install -y --no-install-recommends unzip
+RUN apt-get install -y --no-install-recommends python3-mutagen
+# RUN apt-get install -y --no-install-recommends libimage-exiftool-perl
 RUN apt-get install -y --no-install-recommends untex
 RUN apt-get clean
 
