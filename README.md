@@ -15,10 +15,27 @@ recoll with webui in a docker container
 - docker hub: https://hub.docker.com/repository/docker/amsaravi/recoll-web-ui
 # installation steps
 
-do: 
-clone repro
-adjust docker-compose.yml to your whishes 
+in a terminal: 
+```
+git clone https://github.com/jajpater/docker-recoll-webui.git
+cd docker-recoll-webui
+```
+
+adjust docker-compose.yml to your whishes
+and after that simply do: 
+
+```
 docker-compose build
 docker-compose up -d
+```
 
-- for simplicity there is no user level configuration. you can maintain your container and change configs in `/root/.recoll/recoll.conf` and use docker exec command (not run command) to rebuild index
+- for simplicity there is no user level configuration. 
+- you can maintain your container and change configs in `/root/.recoll/recoll.conf` 
+- use docker exec command (not run command) to rebuild index as in:
+
+```
+docker exec docker-recoll-webui_webapp_1 recollindex 
+```
+- or use a script like the recollindex.sh in the repo
+
+
